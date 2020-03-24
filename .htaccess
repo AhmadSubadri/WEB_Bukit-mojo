@@ -1,0 +1,5 @@
+<IFModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteCond $1 !^(index\.php|xd_receiver\.htm|googlehostedservice\.html|asset_front|login|asset|upload|callie|assets)
+	RewriteRule (.*) index.php?/$1 [L]
+</IfModule>
